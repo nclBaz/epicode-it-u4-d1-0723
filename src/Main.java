@@ -4,7 +4,7 @@ public class Main {
 /*		System.out.println("Hello world!");
 		System.out.println("Ciao");*/
 
-		boolean x = true;
+	/*	boolean x = true;
 		x = false;
 
 		// --------------------------- NUMERI INTERI ------------------------------
@@ -52,7 +52,26 @@ public class Main {
 		for (int i = 0; i < arrayDiStringhe.length; i++) {
 			System.out.println("Elemento corrente: " + arrayDiStringhe[i]);
 			System.out.println("Indice corrente: " + i);
-		}
+		}*/
 
+		// ---------------------------------- METODI -------------------------------------
+		int risultato = sum(2, 5);
+		System.out.println("La somma è: " + risultato);
+		printSum(2, 7);
+		String risultatoStringa = sumAsString(3, 7);
+		System.out.println("La somma è: " + risultatoStringa);
+
+	}
+
+	public static int sum(int num1, int num2) { // Questo metodo dovrà tornare un int
+		return num1 + num2;
+	}
+
+	public static void printSum(int num1, int num2) { // Questo metodo invece non torna niente (void)
+		System.out.println("La somma è: " + (num1 + num2));
+	}
+
+	public static String sumAsString(int num1, int num2) {
+		return "" + (num1 + num2);
 	}
 }
