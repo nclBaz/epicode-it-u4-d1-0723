@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
 
@@ -55,11 +57,30 @@ public class Main {
 		}*/
 
 		// ---------------------------------- METODI -------------------------------------
+/*
 		int risultato = sum(2, 5);
 		System.out.println("La somma è: " + risultato);
 		printSum(2, 7);
 		String risultatoStringa = sumAsString(3, 7);
 		System.out.println("La somma è: " + risultatoStringa);
+*/
+
+
+		// ---------------------------------- SCANNER -------------------------------------
+		Scanner scanner = new Scanner(System.in); // Inizializzazione Scanner, strumento utile per richiedere degli input agli utenti
+		// System.in vuol dire leggi gli input dal terminale
+
+		System.out.println("Caro utente, per favore inserisci il tuo nome seguito dal tasto invio");
+		String name = scanner.nextLine(); // Attendo che l'utente scriva il proprio nome, una volta fatto salverò tale valore in una variabile di tipo String
+		System.out.println("Hai inserito " + name);
+		System.out.println("Ora inserisci un numero intero");
+		// int numero1 = scanner.nextInt(); // Sconsiglio di mixare nextLine con nextInt
+		int numero1 = Integer.parseInt(scanner.nextLine()); // Attendo che l'utente inserisca un numero, quando lo inserisce lo converto in intero e lo salvo in una variabile di tipo int
+		System.out.println("Ora inserisci un secondo numero intero");
+		int numero2 = Integer.parseInt(scanner.nextLine());
+		System.out.println("La somma è: " + sum(numero1, numero2));
+
+		scanner.close(); // è sempre bene ricordarsi di chiudere lo scanner appena si finisce di usare
 
 	}
 
