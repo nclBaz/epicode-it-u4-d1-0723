@@ -37,7 +37,22 @@ public class Main {
 		System.out.println("La lunghezza della stringa è: " + stringa.length());
 		System.out.println("Il primo carattere della stringa è: " + stringa.charAt(0));
 		System.out.println(stringa.replaceAll("World", "Mondo"));
-		
+
+
+		// ------------------------------- ARRAYS ------------------------------------
+		String[] arrayDiStringhe = {"ciao", "a", "tutti"}; // Array di 3 elementi già inizializzato
+		// String[] arrayDiStringhe = new String[3]; // Array di 3 elementi non inizializzato (gli elementi sono null)
+		int[] arrayDiInteri = {1, 2, 3, 4, 5, 6};
+
+		System.out.println("Il primo elemento è: " + arrayDiStringhe[0]);
+		System.out.println("Il secondo elemento è: " + arrayDiStringhe[1]);
+		System.out.println("Il terzo elemento è: " + arrayDiStringhe[2]);
+		// System.out.println("Il terzo elemento è: " + arrayDiStringhe[3]); <-- Attenzione a non uscire dai limiti dell'array!
+
+		for (int i = 0; i < arrayDiStringhe.length; i++) {
+			System.out.println("Elemento corrente: " + arrayDiStringhe[i]);
+			System.out.println("Indice corrente: " + i);
+		}
 
 	}
 }
